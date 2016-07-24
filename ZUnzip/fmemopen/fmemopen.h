@@ -18,6 +18,8 @@
 #ifndef FMEMOPEN_H_
 #define FMEMOPEN_H_
 
+#import <stdio.h>
+
 #ifdef __cplusplus
 extern "C"
 {

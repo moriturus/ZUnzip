@@ -6,24 +6,101 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		D75366DB1D3EA6B4001B00DB /* ZUnzip_Universal */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = D75366DC1D3EA6B4001B00DB /* Build configuration list for PBXAggregateTarget "ZUnzip_Universal" */;
-			buildPhases = (
-				D75366DF1D3EA6C9001B00DB /* ShellScript */,
-			);
-			dependencies = (
-				D75366E11D3EA72A001B00DB /* PBXTargetDependency */,
-			);
-			name = ZUnzip_Universal;
-			productName = ZUnzip_Universal;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		D79FA75D1D3E9B720048FECE /* ZUnzip.h in Headers */ = {isa = PBXBuildFile; fileRef = D79FA75B1D3E9B720048FECE /* ZUnzip.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D79FA7641D3E9BA00048FECE /* ZUnzip.m in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7631D3E9BA00048FECE /* ZUnzip.m */; };
+		BEF5C2771D45478F00A067E4 /* ZUnzip.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF5C2761D45478F00A067E4 /* ZUnzip.swift */; };
+		BEF5C2951D4568C700A067E4 /* ZUnzip.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF5C2761D45478F00A067E4 /* ZUnzip.swift */; };
+		BEF5C3061D45693600A067E4 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = D79FA76D1D3E9BC60048FECE /* config.h */; };
+		BEF5C3071D45693600A067E4 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = D79FA76E1D3E9BC60048FECE /* zip.h */; };
+		BEF5C3081D45693600A067E4 /* zip_add.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA76F1D3E9BC60048FECE /* zip_add.c */; };
+		BEF5C3091D45693600A067E4 /* zip_add_dir.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7701D3E9BC60048FECE /* zip_add_dir.c */; };
+		BEF5C30A1D45693600A067E4 /* zip_add_entry.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7711D3E9BC60048FECE /* zip_add_entry.c */; };
+		BEF5C30B1D45693600A067E4 /* zip_close.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7721D3E9BC60048FECE /* zip_close.c */; };
+		BEF5C30C1D45693600A067E4 /* zip_delete.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7731D3E9BC60048FECE /* zip_delete.c */; };
+		BEF5C30D1D45693600A067E4 /* zip_dir_add.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7741D3E9BC60048FECE /* zip_dir_add.c */; };
+		BEF5C30E1D45693600A067E4 /* zip_dirent.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7751D3E9BC60048FECE /* zip_dirent.c */; };
+		BEF5C30F1D45693600A067E4 /* zip_discard.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7761D3E9BC60048FECE /* zip_discard.c */; };
+		BEF5C3101D45693600A067E4 /* zip_entry.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7771D3E9BC60048FECE /* zip_entry.c */; };
+		BEF5C3111D45693600A067E4 /* zip_err_str.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7781D3E9BC60048FECE /* zip_err_str.c */; };
+		BEF5C3121D45693600A067E4 /* zip_error.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7791D3E9BC60048FECE /* zip_error.c */; };
+		BEF5C3131D45693600A067E4 /* zip_error_clear.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA77A1D3E9BC60048FECE /* zip_error_clear.c */; };
+		BEF5C3141D45693600A067E4 /* zip_error_get.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA77B1D3E9BC60048FECE /* zip_error_get.c */; };
+		BEF5C3151D45693600A067E4 /* zip_error_get_sys_type.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA77C1D3E9BC60048FECE /* zip_error_get_sys_type.c */; };
+		BEF5C3161D45693600A067E4 /* zip_error_strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA77D1D3E9BC60048FECE /* zip_error_strerror.c */; };
+		BEF5C3171D45693600A067E4 /* zip_error_to_str.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA77E1D3E9BC60048FECE /* zip_error_to_str.c */; };
+		BEF5C3181D45693600A067E4 /* zip_extra_field.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA77F1D3E9BC60048FECE /* zip_extra_field.c */; };
+		BEF5C3191D45693600A067E4 /* zip_extra_field_api.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7801D3E9BC60048FECE /* zip_extra_field_api.c */; };
+		BEF5C31A1D45693600A067E4 /* zip_fclose.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7811D3E9BC60048FECE /* zip_fclose.c */; };
+		BEF5C31B1D45693600A067E4 /* zip_fdopen.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7821D3E9BC60048FECE /* zip_fdopen.c */; };
+		BEF5C31C1D45693600A067E4 /* zip_file_add.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7831D3E9BC60048FECE /* zip_file_add.c */; };
+		BEF5C31D1D45693600A067E4 /* zip_file_error_clear.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7841D3E9BC60048FECE /* zip_file_error_clear.c */; };
+		BEF5C31E1D45693600A067E4 /* zip_file_error_get.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7851D3E9BC60048FECE /* zip_file_error_get.c */; };
+		BEF5C31F1D45693600A067E4 /* zip_file_get_comment.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7861D3E9BC60048FECE /* zip_file_get_comment.c */; };
+		BEF5C3201D45693600A067E4 /* zip_file_get_external_attributes.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7871D3E9BC60048FECE /* zip_file_get_external_attributes.c */; };
+		BEF5C3211D45693600A067E4 /* zip_file_get_offset.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7881D3E9BC60048FECE /* zip_file_get_offset.c */; };
+		BEF5C3221D45693600A067E4 /* zip_file_rename.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7891D3E9BC60048FECE /* zip_file_rename.c */; };
+		BEF5C3231D45693600A067E4 /* zip_file_replace.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA78A1D3E9BC60048FECE /* zip_file_replace.c */; };
+		BEF5C3241D45693600A067E4 /* zip_file_set_comment.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA78B1D3E9BC60048FECE /* zip_file_set_comment.c */; };
+		BEF5C3251D45693600A067E4 /* zip_file_set_external_attributes.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA78C1D3E9BC60048FECE /* zip_file_set_external_attributes.c */; };
+		BEF5C3261D45693600A067E4 /* zip_file_strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA78D1D3E9BC60048FECE /* zip_file_strerror.c */; };
+		BEF5C3271D45693600A067E4 /* zip_filerange_crc.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA78E1D3E9BC60048FECE /* zip_filerange_crc.c */; };
+		BEF5C3281D45693600A067E4 /* zip_fopen.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA78F1D3E9BC60048FECE /* zip_fopen.c */; };
+		BEF5C3291D45693600A067E4 /* zip_fopen_encrypted.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7901D3E9BC60048FECE /* zip_fopen_encrypted.c */; };
+		BEF5C32A1D45693600A067E4 /* zip_fopen_index.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7911D3E9BC60048FECE /* zip_fopen_index.c */; };
+		BEF5C32B1D45693600A067E4 /* zip_fopen_index_encrypted.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7921D3E9BC60048FECE /* zip_fopen_index_encrypted.c */; };
+		BEF5C32C1D45693600A067E4 /* zip_fread.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7931D3E9BC60048FECE /* zip_fread.c */; };
+		BEF5C32D1D45693600A067E4 /* zip_get_archive_comment.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7941D3E9BC60048FECE /* zip_get_archive_comment.c */; };
+		BEF5C32E1D45693600A067E4 /* zip_get_archive_flag.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7951D3E9BC60048FECE /* zip_get_archive_flag.c */; };
+		BEF5C32F1D45693600A067E4 /* zip_get_compression_implementation.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7961D3E9BC60048FECE /* zip_get_compression_implementation.c */; };
+		BEF5C3301D45693600A067E4 /* zip_get_encryption_implementation.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7971D3E9BC60048FECE /* zip_get_encryption_implementation.c */; };
+		BEF5C3311D45693600A067E4 /* zip_get_file_comment.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7981D3E9BC60048FECE /* zip_get_file_comment.c */; };
+		BEF5C3321D45693600A067E4 /* zip_get_name.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7991D3E9BC60048FECE /* zip_get_name.c */; };
+		BEF5C3331D45693600A067E4 /* zip_get_num_entries.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA79A1D3E9BC60048FECE /* zip_get_num_entries.c */; };
+		BEF5C3341D45693600A067E4 /* zip_get_num_files.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA79B1D3E9BC60048FECE /* zip_get_num_files.c */; };
+		BEF5C3351D45693600A067E4 /* zip_memdup.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA79C1D3E9BC60048FECE /* zip_memdup.c */; };
+		BEF5C3361D45693600A067E4 /* zip_name_locate.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA79D1D3E9BC60048FECE /* zip_name_locate.c */; };
+		BEF5C3371D45693600A067E4 /* zip_new.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA79E1D3E9BC60048FECE /* zip_new.c */; };
+		BEF5C3381D45693600A067E4 /* zip_open.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA79F1D3E9BC60048FECE /* zip_open.c */; };
+		BEF5C3391D45693600A067E4 /* zip_rename.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7A01D3E9BC60048FECE /* zip_rename.c */; };
+		BEF5C33A1D45693600A067E4 /* zip_replace.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7A11D3E9BC60048FECE /* zip_replace.c */; };
+		BEF5C33B1D45693600A067E4 /* zip_set_archive_comment.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7A21D3E9BC60048FECE /* zip_set_archive_comment.c */; };
+		BEF5C33C1D45693600A067E4 /* zip_set_archive_flag.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7A31D3E9BC60048FECE /* zip_set_archive_flag.c */; };
+		BEF5C33D1D45693600A067E4 /* zip_set_default_password.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7A41D3E9BC60048FECE /* zip_set_default_password.c */; };
+		BEF5C33E1D45693600A067E4 /* zip_set_file_comment.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7A51D3E9BC60048FECE /* zip_set_file_comment.c */; };
+		BEF5C33F1D45693600A067E4 /* zip_set_file_compression.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7A61D3E9BC60048FECE /* zip_set_file_compression.c */; };
+		BEF5C3401D45693600A067E4 /* zip_set_name.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7A71D3E9BC60048FECE /* zip_set_name.c */; };
+		BEF5C3411D45693600A067E4 /* zip_source_buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7A81D3E9BC60048FECE /* zip_source_buffer.c */; };
+		BEF5C3421D45693600A067E4 /* zip_source_close.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7A91D3E9BC60048FECE /* zip_source_close.c */; };
+		BEF5C3431D45693600A067E4 /* zip_source_crc.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7AA1D3E9BC60048FECE /* zip_source_crc.c */; };
+		BEF5C3441D45693600A067E4 /* zip_source_deflate.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7AB1D3E9BC60048FECE /* zip_source_deflate.c */; };
+		BEF5C3451D45693600A067E4 /* zip_source_error.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7AC1D3E9BC60048FECE /* zip_source_error.c */; };
+		BEF5C3461D45693600A067E4 /* zip_source_file.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7AD1D3E9BC60048FECE /* zip_source_file.c */; };
+		BEF5C3471D45693600A067E4 /* zip_source_filep.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7AE1D3E9BC60048FECE /* zip_source_filep.c */; };
+		BEF5C3481D45693600A067E4 /* zip_source_free.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7AF1D3E9BC60048FECE /* zip_source_free.c */; };
+		BEF5C3491D45693600A067E4 /* zip_source_function.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7B01D3E9BC60048FECE /* zip_source_function.c */; };
+		BEF5C34A1D45693600A067E4 /* zip_source_layered.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7B11D3E9BC60048FECE /* zip_source_layered.c */; };
+		BEF5C34B1D45693600A067E4 /* zip_source_open.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7B21D3E9BC60048FECE /* zip_source_open.c */; };
+		BEF5C34C1D45693600A067E4 /* zip_source_pkware.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7B31D3E9BC60048FECE /* zip_source_pkware.c */; };
+		BEF5C34D1D45693600A067E4 /* zip_source_pop.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7B41D3E9BC60048FECE /* zip_source_pop.c */; };
+		BEF5C34E1D45693600A067E4 /* zip_source_read.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7B51D3E9BC60048FECE /* zip_source_read.c */; };
+		BEF5C34F1D45693600A067E4 /* zip_source_stat.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7B61D3E9BC60048FECE /* zip_source_stat.c */; };
+		BEF5C3501D45693600A067E4 /* zip_source_window.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7B71D3E9BC60048FECE /* zip_source_window.c */; };
+		BEF5C3511D45693600A067E4 /* zip_source_zip.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7B81D3E9BC60048FECE /* zip_source_zip.c */; };
+		BEF5C3521D45693600A067E4 /* zip_source_zip_new.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7B91D3E9BC60048FECE /* zip_source_zip_new.c */; };
+		BEF5C3531D45693600A067E4 /* zip_stat.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7BA1D3E9BC60048FECE /* zip_stat.c */; };
+		BEF5C3541D45693600A067E4 /* zip_stat_index.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7BB1D3E9BC60048FECE /* zip_stat_index.c */; };
+		BEF5C3551D45693600A067E4 /* zip_stat_init.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7BC1D3E9BC60048FECE /* zip_stat_init.c */; };
+		BEF5C3561D45693600A067E4 /* zip_strerror.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7BD1D3E9BC60048FECE /* zip_strerror.c */; };
+		BEF5C3571D45693600A067E4 /* zip_string.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7BE1D3E9BC60048FECE /* zip_string.c */; };
+		BEF5C3581D45693600A067E4 /* zip_unchange.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7BF1D3E9BC60048FECE /* zip_unchange.c */; };
+		BEF5C3591D45693600A067E4 /* zip_unchange_all.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7C01D3E9BC60048FECE /* zip_unchange_all.c */; };
+		BEF5C35A1D45693600A067E4 /* zip_unchange_archive.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7C11D3E9BC60048FECE /* zip_unchange_archive.c */; };
+		BEF5C35B1D45693600A067E4 /* zip_unchange_data.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7C21D3E9BC60048FECE /* zip_unchange_data.c */; };
+		BEF5C35C1D45693600A067E4 /* zip_utf-8.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7C31D3E9BC60048FECE /* zip_utf-8.c */; };
+		BEF5C35D1D45693600A067E4 /* zipconf.h in Headers */ = {isa = PBXBuildFile; fileRef = D79FA7C41D3E9BC60048FECE /* zipconf.h */; };
+		BEF5C35E1D45693600A067E4 /* zipint.h in Headers */ = {isa = PBXBuildFile; fileRef = D79FA7C51D3E9BC60048FECE /* zipint.h */; };
+		BEF5C35F1D45694100A067E4 /* fmemopen.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7661D3E9BBD0048FECE /* fmemopen.c */; };
+		BEF5C3601D45694100A067E4 /* fmemopen.h in Headers */ = {isa = PBXBuildFile; fileRef = D79FA7671D3E9BBD0048FECE /* fmemopen.h */; };
+		BEF5C3621D45696200A067E4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF5C3611D45696200A067E4 /* libz.tbd */; };
 		D79FA7691D3E9BBD0048FECE /* fmemopen.c in Sources */ = {isa = PBXBuildFile; fileRef = D79FA7661D3E9BBD0048FECE /* fmemopen.c */; };
 		D79FA76A1D3E9BBD0048FECE /* fmemopen.h in Headers */ = {isa = PBXBuildFile; fileRef = D79FA7671D3E9BBD0048FECE /* fmemopen.h */; };
 		D79FA7C61D3E9BC60048FECE /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = D79FA76D1D3E9BC60048FECE /* config.h */; };
@@ -118,21 +195,14 @@
 		D79FA8211D3E9BDB0048FECE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D79FA8201D3E9BDB0048FECE /* libz.tbd */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		D75366E01D3EA72A001B00DB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D79FA74F1D3E9B720048FECE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D79FA7571D3E9B720048FECE;
-			remoteInfo = ZUnzip;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		BEF5C2711D45464400A067E4 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		BEF5C2761D45478F00A067E4 /* ZUnzip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZUnzip.swift; sourceTree = "<group>"; };
+		BEF5C2781D45484000A067E4 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		BEF5C27E1D45689B00A067E4 /* ZUnzip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZUnzip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEF5C3611D45696200A067E4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/usr/lib/libz.tbd; sourceTree = DEVELOPER_DIR; };
 		D79FA7581D3E9B720048FECE /* ZUnzip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZUnzip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D79FA75B1D3E9B720048FECE /* ZUnzip.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZUnzip.h; sourceTree = "<group>"; };
 		D79FA75C1D3E9B720048FECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D79FA7631D3E9BA00048FECE /* ZUnzip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZUnzip.m; sourceTree = "<group>"; };
 		D79FA7661D3E9BBD0048FECE /* fmemopen.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fmemopen.c; sourceTree = "<group>"; };
 		D79FA7671D3E9BBD0048FECE /* fmemopen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmemopen.h; sourceTree = "<group>"; };
 		D79FA7681D3E9BBD0048FECE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -229,6 +299,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		BEF5C27A1D45689A00A067E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF5C3621D45696200A067E4 /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D79FA7541D3E9B720048FECE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -253,6 +331,7 @@
 			isa = PBXGroup;
 			children = (
 				D79FA7581D3E9B720048FECE /* ZUnzip.framework */,
+				BEF5C27E1D45689B00A067E4 /* ZUnzip.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -262,8 +341,7 @@
 			children = (
 				D79FA76C1D3E9BC60048FECE /* libzip */,
 				D79FA7651D3E9BBD0048FECE /* fmemopen */,
-				D79FA75B1D3E9B720048FECE /* ZUnzip.h */,
-				D79FA7631D3E9BA00048FECE /* ZUnzip.m */,
+				BEF5C2761D45478F00A067E4 /* ZUnzip.swift */,
 				D79FA75C1D3E9B720048FECE /* Info.plist */,
 			);
 			path = ZUnzip;
@@ -272,6 +350,7 @@
 		D79FA7651D3E9BBD0048FECE /* fmemopen */ = {
 			isa = PBXGroup;
 			children = (
+				BEF5C2781D45484000A067E4 /* module.modulemap */,
 				D79FA7661D3E9BBD0048FECE /* fmemopen.c */,
 				D79FA7671D3E9BBD0048FECE /* fmemopen.h */,
 				D79FA7681D3E9BBD0048FECE /* README.md */,
@@ -282,6 +361,7 @@
 		D79FA76C1D3E9BC60048FECE /* libzip */ = {
 			isa = PBXGroup;
 			children = (
+				BEF5C2711D45464400A067E4 /* module.modulemap */,
 				D79FA76D1D3E9BC60048FECE /* config.h */,
 				D79FA76E1D3E9BC60048FECE /* zip.h */,
 				D79FA76F1D3E9BC60048FECE /* zip_add.c */,
@@ -378,6 +458,7 @@
 		D79FA81F1D3E9BDB0048FECE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BEF5C3611D45696200A067E4 /* libz.tbd */,
 				D79FA8201D3E9BDB0048FECE /* libz.tbd */,
 			);
 			name = Frameworks;
@@ -386,13 +467,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		BEF5C27B1D45689A00A067E4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEF5C35E1D45693600A067E4 /* zipint.h in Headers */,
+				BEF5C3071D45693600A067E4 /* zip.h in Headers */,
+				BEF5C3601D45694100A067E4 /* fmemopen.h in Headers */,
+				BEF5C35D1D45693600A067E4 /* zipconf.h in Headers */,
+				BEF5C3061D45693600A067E4 /* config.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D79FA7551D3E9B720048FECE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D79FA81E1D3E9BC60048FECE /* zipint.h in Headers */,
 				D79FA81D1D3E9BC60048FECE /* zipconf.h in Headers */,
-				D79FA75D1D3E9B720048FECE /* ZUnzip.h in Headers */,
 				D79FA76A1D3E9BBD0048FECE /* fmemopen.h in Headers */,
 				D79FA7C71D3E9BC60048FECE /* zip.h in Headers */,
 				D79FA7C61D3E9BC60048FECE /* config.h in Headers */,
@@ -402,6 +494,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		BEF5C27D1D45689A00A067E4 /* ZUnzip macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEF5C28F1D45689B00A067E4 /* Build configuration list for PBXNativeTarget "ZUnzip macOS" */;
+			buildPhases = (
+				BEF5C2791D45689A00A067E4 /* Sources */,
+				BEF5C27A1D45689A00A067E4 /* Frameworks */,
+				BEF5C27B1D45689A00A067E4 /* Headers */,
+				BEF5C27C1D45689A00A067E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ZUnzip macOS";
+			productName = "ZUZip macOS";
+			productReference = BEF5C27E1D45689B00A067E4 /* ZUnzip.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		D79FA7571D3E9B720048FECE /* ZUnzip */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D79FA7601D3E9B720048FECE /* Build configuration list for PBXNativeTarget "ZUnzip" */;
@@ -426,18 +536,15 @@
 		D79FA74F1D3E9B720048FECE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Kaz Yoshikawa";
 				TargetAttributes = {
-					D75366DB1D3EA6B4001B00DB = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 2P97EM4L4N;
-						DevelopmentTeamName = "Electricwoods LLC";
-						ProvisioningStyle = Automatic;
+					BEF5C27D1D45689A00A067E4 = {
+						CreatedOnToolsVersion = 7.3.1;
 					};
 					D79FA7571D3E9B720048FECE = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 2P97EM4L4N;
 						DevelopmentTeamName = "Electricwoods LLC";
 						ProvisioningStyle = Automatic;
 					};
@@ -456,12 +563,19 @@
 			projectRoot = "";
 			targets = (
 				D79FA7571D3E9B720048FECE /* ZUnzip */,
-				D75366DB1D3EA6B4001B00DB /* ZUnzip_Universal */,
+				BEF5C27D1D45689A00A067E4 /* ZUnzip macOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		BEF5C27C1D45689A00A067E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D79FA7561D3E9B720048FECE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -471,23 +585,101 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		D75366DF1D3EA6C9001B00DB /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
+/* Begin PBXSourcesBuildPhase section */
+		BEF5C2791D45689A00A067E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
+				BEF5C31B1D45693600A067E4 /* zip_fdopen.c in Sources */,
+				BEF5C3571D45693600A067E4 /* zip_string.c in Sources */,
+				BEF5C31C1D45693600A067E4 /* zip_file_add.c in Sources */,
+				BEF5C32F1D45693600A067E4 /* zip_get_compression_implementation.c in Sources */,
+				BEF5C30D1D45693600A067E4 /* zip_dir_add.c in Sources */,
+				BEF5C3561D45693600A067E4 /* zip_strerror.c in Sources */,
+				BEF5C33D1D45693600A067E4 /* zip_set_default_password.c in Sources */,
+				BEF5C30A1D45693600A067E4 /* zip_add_entry.c in Sources */,
+				BEF5C33B1D45693600A067E4 /* zip_set_archive_comment.c in Sources */,
+				BEF5C2951D4568C700A067E4 /* ZUnzip.swift in Sources */,
+				BEF5C3291D45693600A067E4 /* zip_fopen_encrypted.c in Sources */,
+				BEF5C3311D45693600A067E4 /* zip_get_file_comment.c in Sources */,
+				BEF5C34B1D45693600A067E4 /* zip_source_open.c in Sources */,
+				BEF5C3481D45693600A067E4 /* zip_source_free.c in Sources */,
+				BEF5C3181D45693600A067E4 /* zip_extra_field.c in Sources */,
+				BEF5C3161D45693600A067E4 /* zip_error_strerror.c in Sources */,
+				BEF5C30B1D45693600A067E4 /* zip_close.c in Sources */,
+				BEF5C3081D45693600A067E4 /* zip_add.c in Sources */,
+				BEF5C34E1D45693600A067E4 /* zip_source_read.c in Sources */,
+				BEF5C33A1D45693600A067E4 /* zip_replace.c in Sources */,
+				BEF5C3131D45693600A067E4 /* zip_error_clear.c in Sources */,
+				BEF5C34D1D45693600A067E4 /* zip_source_pop.c in Sources */,
+				BEF5C3321D45693600A067E4 /* zip_get_name.c in Sources */,
+				BEF5C3591D45693600A067E4 /* zip_unchange_all.c in Sources */,
+				BEF5C3281D45693600A067E4 /* zip_fopen.c in Sources */,
+				BEF5C3491D45693600A067E4 /* zip_source_function.c in Sources */,
+				BEF5C31D1D45693600A067E4 /* zip_file_error_clear.c in Sources */,
+				BEF5C30E1D45693600A067E4 /* zip_dirent.c in Sources */,
+				BEF5C3201D45693600A067E4 /* zip_file_get_external_attributes.c in Sources */,
+				BEF5C3171D45693600A067E4 /* zip_error_to_str.c in Sources */,
+				BEF5C33E1D45693600A067E4 /* zip_set_file_comment.c in Sources */,
+				BEF5C3471D45693600A067E4 /* zip_source_filep.c in Sources */,
+				BEF5C3341D45693600A067E4 /* zip_get_num_files.c in Sources */,
+				BEF5C30F1D45693600A067E4 /* zip_discard.c in Sources */,
+				BEF5C3521D45693600A067E4 /* zip_source_zip_new.c in Sources */,
+				BEF5C3221D45693600A067E4 /* zip_file_rename.c in Sources */,
+				BEF5C31A1D45693600A067E4 /* zip_fclose.c in Sources */,
+				BEF5C3401D45693600A067E4 /* zip_set_name.c in Sources */,
+				BEF5C3511D45693600A067E4 /* zip_source_zip.c in Sources */,
+				BEF5C35A1D45693600A067E4 /* zip_unchange_archive.c in Sources */,
+				BEF5C33F1D45693600A067E4 /* zip_set_file_compression.c in Sources */,
+				BEF5C3391D45693600A067E4 /* zip_rename.c in Sources */,
+				BEF5C3211D45693600A067E4 /* zip_file_get_offset.c in Sources */,
+				BEF5C3351D45693600A067E4 /* zip_memdup.c in Sources */,
+				BEF5C35C1D45693600A067E4 /* zip_utf-8.c in Sources */,
+				BEF5C3111D45693600A067E4 /* zip_err_str.c in Sources */,
+				BEF5C3151D45693600A067E4 /* zip_error_get_sys_type.c in Sources */,
+				BEF5C32B1D45693600A067E4 /* zip_fopen_index_encrypted.c in Sources */,
+				BEF5C3431D45693600A067E4 /* zip_source_crc.c in Sources */,
+				BEF5C3461D45693600A067E4 /* zip_source_file.c in Sources */,
+				BEF5C35F1D45694100A067E4 /* fmemopen.c in Sources */,
+				BEF5C33C1D45693600A067E4 /* zip_set_archive_flag.c in Sources */,
+				BEF5C3241D45693600A067E4 /* zip_file_set_comment.c in Sources */,
+				BEF5C3451D45693600A067E4 /* zip_source_error.c in Sources */,
+				BEF5C34C1D45693600A067E4 /* zip_source_pkware.c in Sources */,
+				BEF5C3141D45693600A067E4 /* zip_error_get.c in Sources */,
+				BEF5C3501D45693600A067E4 /* zip_source_window.c in Sources */,
+				BEF5C3231D45693600A067E4 /* zip_file_replace.c in Sources */,
+				BEF5C34A1D45693600A067E4 /* zip_source_layered.c in Sources */,
+				BEF5C3441D45693600A067E4 /* zip_source_deflate.c in Sources */,
+				BEF5C3411D45693600A067E4 /* zip_source_buffer.c in Sources */,
+				BEF5C32C1D45693600A067E4 /* zip_fread.c in Sources */,
+				BEF5C32E1D45693600A067E4 /* zip_get_archive_flag.c in Sources */,
+				BEF5C3551D45693600A067E4 /* zip_stat_init.c in Sources */,
+				BEF5C3191D45693600A067E4 /* zip_extra_field_api.c in Sources */,
+				BEF5C3421D45693600A067E4 /* zip_source_close.c in Sources */,
+				BEF5C3261D45693600A067E4 /* zip_file_strerror.c in Sources */,
+				BEF5C3301D45693600A067E4 /* zip_get_encryption_implementation.c in Sources */,
+				BEF5C32A1D45693600A067E4 /* zip_fopen_index.c in Sources */,
+				BEF5C3331D45693600A067E4 /* zip_get_num_entries.c in Sources */,
+				BEF5C34F1D45693600A067E4 /* zip_source_stat.c in Sources */,
+				BEF5C3121D45693600A067E4 /* zip_error.c in Sources */,
+				BEF5C31F1D45693600A067E4 /* zip_file_get_comment.c in Sources */,
+				BEF5C3541D45693600A067E4 /* zip_stat_index.c in Sources */,
+				BEF5C30C1D45693600A067E4 /* zip_delete.c in Sources */,
+				BEF5C3381D45693600A067E4 /* zip_open.c in Sources */,
+				BEF5C3101D45693600A067E4 /* zip_entry.c in Sources */,
+				BEF5C3531D45693600A067E4 /* zip_stat.c in Sources */,
+				BEF5C3271D45693600A067E4 /* zip_filerange_crc.c in Sources */,
+				BEF5C3091D45693600A067E4 /* zip_add_dir.c in Sources */,
+				BEF5C3361D45693600A067E4 /* zip_name_locate.c in Sources */,
+				BEF5C3251D45693600A067E4 /* zip_file_set_external_attributes.c in Sources */,
+				BEF5C3581D45693600A067E4 /* zip_unchange.c in Sources */,
+				BEF5C3371D45693600A067E4 /* zip_new.c in Sources */,
+				BEF5C32D1D45693600A067E4 /* zip_get_archive_comment.c in Sources */,
+				BEF5C35B1D45693600A067E4 /* zip_unchange_data.c in Sources */,
+				BEF5C31E1D45693600A067E4 /* zip_file_error_get.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target \"${PROJECT_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -target \"${PROJECT_NAME}\" -configuration ${CONFIGURATION} -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\ncp -R \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\" \"${PROJECT_DIR}\"\n\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}\"";
 		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
 		D79FA7531D3E9B720048FECE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -507,6 +699,7 @@
 				D79FA7D81D3E9BC60048FECE /* zip_extra_field.c in Sources */,
 				D79FA8091D3E9BC60048FECE /* zip_source_function.c in Sources */,
 				D79FA8071D3E9BC60048FECE /* zip_source_filep.c in Sources */,
+				BEF5C2771D45478F00A067E4 /* ZUnzip.swift in Sources */,
 				D79FA7CC1D3E9BC60048FECE /* zip_delete.c in Sources */,
 				D79FA7CD1D3E9BC60048FECE /* zip_dir_add.c in Sources */,
 				D79FA7CF1D3E9BC60048FECE /* zip_discard.c in Sources */,
@@ -577,33 +770,54 @@
 				D79FA7F91D3E9BC60048FECE /* zip_rename.c in Sources */,
 				D79FA8011D3E9BC60048FECE /* zip_source_buffer.c in Sources */,
 				D79FA7D21D3E9BC60048FECE /* zip_error.c in Sources */,
-				D79FA7641D3E9BA00048FECE /* ZUnzip.m in Sources */,
 				D79FA7EA1D3E9BC60048FECE /* zip_fopen_index.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		D75366E11D3EA72A001B00DB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D79FA7571D3E9B720048FECE /* ZUnzip */;
-			targetProxy = D75366E01D3EA72A001B00DB /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
-		D75366DD1D3EA6B4001B00DB /* Debug */ = {
+		BEF5C2901D45689B00A067E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = ZUnzip/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.electricwoods.ZUZip;
+				PRODUCT_NAME = ZUnzip;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		D75366DE1D3EA6B4001B00DB /* Release */ = {
+		BEF5C2911D45689B00A067E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = ZUnzip/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.electricwoods.ZUZip;
+				PRODUCT_NAME = ZUnzip;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -650,6 +864,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/ZUnzip/libzip/** $(SRCROOT)/ZUnzip/fmemopen";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -692,6 +907,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/ZUnzip/libzip/** $(SRCROOT)/ZUnzip/fmemopen";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -702,7 +918,9 @@
 		D79FA7611D3E9B720048FECE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -714,6 +932,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.electricwoods.ZUnzip;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
 			};
 			name = Debug;
@@ -721,6 +940,7 @@
 		D79FA7621D3E9B720048FECE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -740,11 +960,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D75366DC1D3EA6B4001B00DB /* Build configuration list for PBXAggregateTarget "ZUnzip_Universal" */ = {
+		BEF5C28F1D45689B00A067E4 /* Build configuration list for PBXNativeTarget "ZUnzip macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D75366DD1D3EA6B4001B00DB /* Debug */,
-				D75366DE1D3EA6B4001B00DB /* Release */,
+				BEF5C2901D45689B00A067E4 /* Debug */,
+				BEF5C2911D45689B00A067E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
